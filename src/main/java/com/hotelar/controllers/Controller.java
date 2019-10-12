@@ -32,7 +32,7 @@ public class Controller extends HttpServlet {
             request.getRequestDispatcher(pageDispatcher).forward(request, response);
         } catch (Exception e) {
             Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, e);
-            request.setAttribute("erro", e);
+            request.setAttribute("erro", e.getMessage());
             request.getRequestDispatcher("erro.jsp").forward(request, response);
         }
     }
