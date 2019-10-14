@@ -17,7 +17,7 @@ public class BancoDeDados {
     public static Connection getConexao(){
         try {
             Class.forName("org.postgresql.Driver");
-            return DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "postgres"); //retorna um Connection
+            return DriverManager.getConnection("jdbc:postgresql://localhost:15432/postgres", "postgres", "Postgres2019!");
         } catch (ClassNotFoundException | SQLException e) {
             Logger.getLogger(BancoDeDados.class.getName()).log(Level.SEVERE, null, e);
             throw new RuntimeException(e);

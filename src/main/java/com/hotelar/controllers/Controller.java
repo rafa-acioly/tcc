@@ -1,7 +1,6 @@
 package com.hotelar.controllers;
 
 import com.hotelar.contratos.Comandos;
-import com.hotelar.entidades.BancoDeDados;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
