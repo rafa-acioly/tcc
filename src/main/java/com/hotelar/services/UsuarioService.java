@@ -21,4 +21,8 @@ public class UsuarioService {
     public ArrayList<Usuario> listar() {
         return this.usuarioDAO.listar();
     }
+
+    public Usuario autenticar(Usuario usuario) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
